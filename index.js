@@ -1,8 +1,12 @@
-const io = require("socket.io")(8900, {
-  cors: {
-    origin: "https://jobstack-2f0c7.web.app",
-  },
-});
+const io = require("socket.io")(
+  8900,
+  console.log("Server is running on port 8900"),
+  {
+    cors: {
+      origin: "https://jobstack-2f0c7.web.app",
+    },
+  }
+);
 
 let activeUsers = [];
 
