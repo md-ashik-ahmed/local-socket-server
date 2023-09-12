@@ -1,9 +1,9 @@
 const io = require("socket.io")(
-  8900,
-  console.log("Server is running on port 8900"),
+  8800,
+  console.log("Server is running on port 8800"),
   {
     cors: {
-      origin: "https://jobstack-2f0c7.web.app",
+      origin: "http://localhost:5173",
     },
   }
 );
